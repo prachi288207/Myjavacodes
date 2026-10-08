@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<H2> Add new Hotel</H2>
+<form action="insert.jsp">
+
+Name <input type "text" name="name"><br>
+Room <input type "text" name="room"><br>
+Price <input type "text" name="price"><br>
+<input type "submit" value="Add Hotel">
+
+</form>
+
+<form> action="display.jsp">
+<input type="submit" value="display">
+</form>
+
+</body>
+</html>
+
+
+String n1=request.getParameter("name");
+String room=request.getParameter("room");
+String price=request.getParameter("price");
+try
+{
+   Class.forName("com.mysql.cj.jdc.Driver");
+   Connection  connection=DriverManager.getConnection
+					("jdbc:mysql://localhost:3306/seca22026", "root","root");
+statement statement.excuteQuary("select from hotel")

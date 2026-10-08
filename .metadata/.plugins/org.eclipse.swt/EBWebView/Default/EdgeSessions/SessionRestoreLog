@@ -1,0 +1,84 @@
+{"logTime": "0805/193101", "session": "START"}
+{"logTime": "0805/193116", "session": "END"}
+{"logTime": "0805/193118", "session": "START"}
+{"logTime": "0805/194010", "session": "END"}
+{"logTime": "0810/073625", "session": "START"}
+{"logTime": "0810/085920", "session": "END"}
+{"logTime": "0813/073238", "session": "START"}
+{"logTime": "0813/073412", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:618 operator()", "message": "No valid session file found: SessionRestore"}
+{"logTime": "0813/073412", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:618 operator()", "message": "Last session file not found for SessionType : SessionRestore"}
+{"logTime": "0813/073422", "session": "END"}
+{"logTime": "0813/073510", "session": "START"}
+{"logTime": "0813/073731", "session": "END"}
+{"logTime": "0813/073835", "session": "START"}
+{"logTime": "0813/090417", "session": "END"}
+{"logTime": "0817/073338", "session": "START"}
+{"logTime": "0817/085228", "session": "END"}
+{"logTime": "0820/073413", "session": "START"}
+{"logTime": "0820/074057", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:618 operator()", "message": "Valid session file found: SessionRestore"}
+{"logTime": "0824/074208", "session": "START"}
+{"logTime": "0824/090536", "session": "END"}
+{"logTime": "0831/073304", "session": "START"}
+{"logTime": "0831/082341", "session": "END"}
+{"logTime": "0907/073342", "session": "START"}
+{"logTime": "0907/090152", "session": "END"}
+{"logTime": "0908/164050", "session": "START"}
+{"logTime": "0908/164050", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0908/172524", "session": "END"}
+{"logTime": "0914/073448", "session": "START"}
+{"logTime": "0914/073448", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0914/085737", "session": "END"}
+{"logTime": "0914/085824", "session": "START"}
+{"logTime": "0914/085824", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0917/073201", "session": "START"}
+{"logTime": "0917/073201", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0917/090439", "session": "END"}
+{"logTime": "0919/085504", "session": "START"}
+{"logTime": "0919/085504", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0919/091306", "session": "END"}
+{"logTime": "0921/073730", "session": "START"}
+{"logTime": "0921/073730", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0921/073738", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:638 operator()", "message": "Valid session file found: SessionRestore"}
+{"logTime": "0921/073738", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:638 operator()", "message": "Delete session file Session_13431080052479514, for SessionType SessionRestore"}
+{"logTime": "0921/073840", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionService exit: 1 tabs, 1 windows across the session."}
+{"logTime": "0921/073840", "level": "INFO", "location": "chrome\\browser\\sessions\\edge_exit_type_tracker.cc:192 SetExitTypeInternal", "message": "Clearing autorestore crash exit count for profile"}
+{"logTime": "0921/085408", "session": "START"}
+{"logTime": "0921/085408", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0921/090711", "session": "END"}
+{"logTime": "0928/072911", "session": "START"}
+{"logTime": "0928/072911", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0928/085222", "session": "END"}
+{"logTime": "0928/085327", "session": "START"}
+{"logTime": "0928/085327", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0928/090433", "session": "END"}
+{"logTime": "0928/090514", "session": "START"}
+{"logTime": "0928/090514", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0928/091051", "session": "END"}
+{"logTime": "0928/091839", "session": "START"}
+{"logTime": "0928/091839", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1001/072830", "session": "START"}
+{"logTime": "1001/072830", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1001/080533", "session": "END"}
+{"logTime": "1001/080912", "session": "START"}
+{"logTime": "1001/080912", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1001/081021", "session": "END"}
+{"logTime": "1001/081700", "session": "START"}
+{"logTime": "1001/081700", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1001/081704", "session": "END"}
+{"logTime": "1001/084647", "session": "START"}
+{"logTime": "1001/084647", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1001/090839", "session": "END"}
+{"logTime": "1001/091630", "session": "START"}
+{"logTime": "1001/091630", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1001/092952", "session": "END"}
+{"logTime": "1003/075812", "session": "START"}
+{"logTime": "1003/075812", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1003/090157", "session": "END"}
+{"logTime": "1005/073128", "session": "START"}
+{"logTime": "1005/073128", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1005/090632", "session": "END"}
+{"logTime": "1008/075642", "session": "START"}
+{"logTime": "1008/075642", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1008/075719", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:638 operator()", "message": "Valid session file found: SessionRestore"}
+{"logTime": "1008/075719", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:638 operator()", "message": "Delete session file Session_13431685257747179, for SessionType SessionRestore"}
+{"logTime": "1008/075720", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionService exit: 1 tabs, 1 windows across the session."}

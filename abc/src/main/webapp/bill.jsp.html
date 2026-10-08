@@ -1,0 +1,118 @@
+<%@ page import="java.sql.*" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Bill</title>
+</head>
+
+<body>
+
+<h1>Hotel Bill Generation</h1>
+
+<form method="post">
+
+    Hotel Name:
+    <input type="text" name="name" required>
+
+    <br><br>
+
+    Room Type:
+    <input type="text" name="room" required>
+
+    <br><br>
+
+    Number of Rooms:
+    <input type="number" name="rooms" min="1" required>
+
+    <br><br>
+
+    Number of Days:
+    <input type="number" name="days" min="1" required>
+
+    <br><br>
+
+    <input type="submit" value="Generate Bill">
+
+</form>
+
+<hr>
+
+<%
+if(request.getMethod().equalsIgnoreCase("POST"))
+{
+    String name = request.getParameter("name");
+    String room = request.getParameter("room");
+    int rooms = Integer.parseInt(request.getParameter("rooms"));
+    int days = Integer.parseInt(request.getParameter("days"));
+
+    try
+    {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+
+        Connection connection = DriverManager.getConnection(
+            "jdbc:mysql://localhost:3306/prachi",
+            "root",
+            "root"
+        );
+
+        PreparedStatement statement = connection.prepareStatement(
+            "SELECT price FROM hotel WHERE name=? AND room=?"
+        );
+
+        statement.setString(1, name);
+        statement.setString(2, room);
+
+        ResultSet set = statement.executeQuery();
+
+        if(set.next())
+        {
+            double price = set.getDouble("price");
+
+            double roomAmount = price * rooms * days;
+            double gst = roomAmount * 0.18;
+            double total = roomAmount + gst;
+%>
+
+<h2>Hotel Bill</h2>
+
+<p><b>Hotel Name:</b> <%= name %></p>
+
+<p><b>Room Type:</b> <%= room %></p>
+
+<p><b>Price per Room/Day:</b> ₹<%= price %></p>
+
+<p><b>Number of Rooms:</b> <%= rooms %></p>
+
+<p><b>Number of Days:</b> <%= days %></p>
+
+<hr>
+
+<p><b>Room Amount:</b> ₹<%= roomAmount %></p>
+
+<p><b>GST (18%):</b> ₹<%= gst %></p>
+
+<p><b>Total Bill:</b> ₹<%= total %></p>
+
+<%
+        }
+        else
+        {
+            out.println("<h3>Hotel or Room Type not found.</h3>");
+        }
+
+        set.close();
+        statement.close();
+        connection.close();
+    }
+    catch(Exception e)
+    {
+        out.println("<h3>Error: " + e.getMessage() + "</h3>");
+    }
+}
+%>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<%@ page import="java.sql.*" %>
+
+<%
+
+String name = request.getParameter("name");
+String room = request.getParameter("room");
+String price = request.getParameter("price");
+
+try
+{
+    Class.forName("com.mysql.cj.jdbc.Driver");
+
+    Connection connection = DriverManager.getConnection(
+        "jdbc:mysql://localhost:3306/harpreet",
+        "root",
+        "root"
+    );
+
+    Statement statement = connection.createStatement();
+
+    String query = "insert into hotel(name,room,price) values('"
+            + name + "','" + room + "','" + price + "')";
+
+    int x = statement.executeUpdate(query);
+
+    if(x == 0)
+    {
+        out.println("Code fail");
+    }
+    else
+    {
+        response.sendRedirect("display.jsp");
+    }
+
+}
+catch(Exception e)
+{
+    out.println(e);
+}
+
+%>

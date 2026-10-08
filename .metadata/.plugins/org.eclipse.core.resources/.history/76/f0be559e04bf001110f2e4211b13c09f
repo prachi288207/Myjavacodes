@@ -1,0 +1,56 @@
+<%@ page import="java.sql.*" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Available Hotels</title>
+</head>
+
+<body>
+
+<h1>Available Hotels</h1>
+
+<%
+
+try
+{
+    Class.forName("com.mysql.cj.jdbc.Driver");
+
+    Connection connection = DriverManager.getConnection(
+        "jdbc:mysql://localhost:3306/harpreet",
+        "root",
+        "root"
+    );
+
+    Statement statement = connection.createStatement();
+
+    ResultSet set = statement.executeQuery("select * from hotel");
+
+    while(set.next())
+    {
+        out.println("Hotel Name: " + set.getString("name"));
+        out.println("<br>");
+
+        out.println("Room Type: " + set.getString("room"));
+        out.println("<br>");
+
+        out.println("Price: â¹" + set.getString("price"));
+        out.println("<br><br>");
+
+        out.println("-------------------------");
+        out.println("<br><br>");
+    }
+
+}
+catch(Exception e)
+{
+    out.println(e);
+}
+
+%>
+
+</body>
+
+</html>
